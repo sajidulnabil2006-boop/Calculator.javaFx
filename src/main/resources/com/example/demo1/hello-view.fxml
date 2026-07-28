@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.demo1.HelloController"
+          hgap="5" vgap="5"
+          alignment="CENTER">
+
+    <TextField fx:id="display"
+               GridPane.rowIndex="0"
+               GridPane.columnSpan="4"
+               editable="false"
+               prefHeight="50"/>
+
+    <Button text="7" onAction="#handleButtonClick" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <Button text="8" onAction="#handleButtonClick" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+    <Button text="9" onAction="#handleButtonClick" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+    <Button text="/" onAction="#handleButtonClick" GridPane.rowIndex="1" GridPane.columnIndex="3"/>
+
+    <Button text="4" onAction="#handleButtonClick" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+    <Button text="5" onAction="#handleButtonClick" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+    <Button text="6" onAction="#handleButtonClick" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+    <Button text="*" onAction="#handleButtonClick" GridPane.rowIndex="2" GridPane.columnIndex="3"/>
+
+    <Button text="1" onAction="#handleButtonClick" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+    <Button text="2" onAction="#handleButtonClick" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+    <Button text="3" onAction="#handleButtonClick" GridPane.rowIndex="3" GridPane.columnIndex="2"/>
+    <Button text="-" onAction="#handleButtonClick" GridPane.rowIndex="3" GridPane.columnIndex="3"/>
+
+    <Button text="0" onAction="#handleButtonClick" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+    <Button text="C" onAction="#handleButtonClick" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+    <Button text="=" onAction="#handleButtonClick" GridPane.rowIndex="4" GridPane.columnIndex="2"/>
+    <Button text="+" onAction="#handleButtonClick" GridPane.rowIndex="4" GridPane.columnIndex="3"/>
+
+</GridPane>
